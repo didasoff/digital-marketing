@@ -1,0 +1,980 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+header div,
+header nav {
+    flex: 1;
+    /*border: 1px solid green;*/
+}
+
+header div .logo {
+    display: block;
+    width: fit-content;
+    margin: 5px 0px 5px 40px;
+}
+
+header div .logo img {
+    width: 180px;
+}
+
+header #header-click-btn {
+    display: none;
+}
+
+header .header-menu-btn {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    margin: 20px auto 0px;
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #262626;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #7000FF;
+}
+
+header div .btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    float: right;
+    margin: 12px 40px 0px 0px;
+}
+
+header div .btn button {
+    height: 40px;
+    width: 150px;
+    color: #262626;
+    font-size: 17px;
+    background-color: #E4E4E4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header div .btn button:hover {
+    background-color: #7000FF;
+    color: white;
+}
+
+/* Hero Section */
+.hero-sec {
+    /*background-color: red;*/
+    margin: 65px 20px 0px;
+}
+
+.hero-sec .canva1 {
+    width: 50px;
+    margin: 0px 0px -120px 246px;
+    animation-name: canvaone;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes canvaone {
+    0% {
+        margin: 0px 0px -125px 246px;
+    }
+
+    50% {
+        margin: 0px 0px -120px 246px;
+    }
+
+    100% {
+        margin: 0px 0px -125px 246px;
+    }
+}
+
+.hero-sec .canva2 {
+    float: right;
+    width: 150px;
+    margin: -145px 290px 0px 0px;
+}
+
+.hero-sec .heading {
+    color: #262626;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 100px 0px 0px 100px;
+}
+
+.hero-sec .heading label {
+    color: #7000FF;
+}
+
+.hero-sec .btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin: 30px 0px 0px 100px;
+}
+
+.hero-sec .btn button {
+    height: 45px;
+    width: 200px;
+    background-color: #7000FF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-sec .btn button:hover {
+    background-color: #E4E4E4;
+    color: #262626;
+}
+
+.hero-sec .heroimg {
+    /*background-color: red;*/
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.hero-sec .heroimg div {
+    flex: 1;
+    margin: 0px 10px;
+}
+
+.hero-sec .heroimg div img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hero-sec .heroimg div img:hover {
+    border-color: #7000FF;
+    padding: 8px;
+}
+
+.hero-sec .heroimg div:nth-of-type(2),
+.hero-sec .heroimg div:nth-of-type(4) {
+    margin-top: 80px;
+}
+
+/* What we do */
+.what-we-do-sec {
+    border: 1px solid white;
+    margin: 80px 20px 0px;
+}
+
+.what-we-do-sec .heading {
+    color: #262626;
+    font-size: 30px;
+    margin: 65px 0px 0px 100px;
+}
+
+.what-we-do-sec .heading label {
+    color: #7000FF;
+}
+
+.what-we-do-sec .content {
+    display: flex;
+    padding: 0px 90px;
+    margin-top: 50px;
+}
+
+.what-we-do-sec .content div {
+    flex: 1;
+    /*border: 1px solid red;*/
+    margin: 0px 10px;
+}
+
+.what-we-do-sec .content div .em {
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.what-we-do-sec .content div h3 {
+    font-size: 20px;
+    color: #262626;
+    padding: 20px 0px;
+}
+
+.what-we-do-sec .content div p {
+    color: #767676;
+    font-size: 16px;
+}
+
+.what-we-do-sec .content div a {
+    display: block;
+    text-decoration: underline;
+    color: #7000FF;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.what-we-do-sec .content div a:hover {
+    color: #262626;
+}
+
+.what-we-do-sec .brand {
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    /*border: 1px solid red;*/
+    margin-top: 100px;
+}
+
+.what-we-do-sec .brand-onboard {
+    display: flex;
+    padding: 30px 0px;
+}
+
+.what-we-do-sec .brand-onboard .how-many,
+.what-we-do-sec .brand-onboard .brand-logo {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+.what-we-do-sec .brand-onboard .how-many p:first-child {
+    font-size: 100px;
+    font-weight: 800;
+    color: #262626;
+    margin: 0px 0px 20px 100px;
+}
+
+.what-we-do-sec .brand-onboard .how-many p:last-child {
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+    margin: 0px 0px 0px 100px;
+}
+
+.what-we-do-sec .brand-onboard .brand-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+}
+
+.what-we-do-sec .brand-onboard .brand-logo div {
+    /*background-color: red;*/
+    width: fit-content;
+    margin: auto;
+}
+
+.what-we-do-sec .brand-onboard .brand-logo img {
+    width: 100px;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+}
+
+.what-we-do-sec .brand .bottom-content {
+    /*border: 1px solid red;*/
+    background-color: #f0f0f0;
+    border-radius: 30px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content {
+    display: flex;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div {
+    flex: 1;
+    /*border: 1px solid red;*/
+    padding: 50px 0px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div img:hover {
+    padding: 10px;
+    border-color: #7000FF;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div h3 {
+    font-size: 30px;
+    color: #262626;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div ul {
+    list-style: none;
+    margin: 30px 0px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div ul li {
+    margin: 15px 0px;
+    font-size: 17px;
+    color: #262626;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div ul li i {
+    color: #ff6b00;
+    margin-right: 10px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div a {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+
+.what-we-do-sec .brand .bottom-content .flex-content div a button {
+    height: 45px;
+    width: 250px;
+    font-size: 18px;
+    color: white;
+    background-color: #7000FF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content div a button:hover {
+    background-color: #E4E4E4;
+    color: #262626;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content-bt {
+    display: flex;
+    padding: 0px 100px 50px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content-bt div {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content-bt div .em {
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #E4E4E4;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content-bt div h3 {
+    font-size: 20px;
+    color: #262626;
+    padding: 20px 0px;
+}
+
+.what-we-do-sec .brand .bottom-content .flex-content-bt div p {
+    color: #767676;
+    font-size: 16px;
+    padding: 0px 20px 0px 0px;
+}
+
+/* Our Work */
+.our-work {
+    border: 1px solid white;
+    margin: 50px 0px 0px;
+}
+
+.our-work .ow-content {
+    display: flex;
+    padding: 0px 100px;
+}
+
+.our-work .ow-content div {
+    flex: 1;
+    /*border: 1px solid red;*/
+    padding-top: 60px;
+}
+
+.our-work .ow-content div h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.our-work .ow-content div .percentage {
+    font-size: 100px;
+    font-weight: 800;
+    color: #262626;
+    margin-top: 30px;
+}
+
+.our-work .ow-content div .mini-title {
+    font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.our-work .ow-content div p {
+    color: #767676;
+    font-size: 16px;
+}
+
+.our-work .ow-content div img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.our-work .ow-content div a {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+
+.our-work .ow-content div a button {
+    height: 45px;
+    width: 250px;
+    font-size: 18px;
+    color: white;
+    background-color: #7000FF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-work .ow-content div a button:hover {
+    background-color: #E4E4E4;
+    color: #262626;
+}
+
+/* Pricing */
+.pricing {
+    border: 1px solid white;
+    padding: 0px 100px;
+    margin: 50px 0px 80px;
+}
+
+.pricing h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+    margin: 65px 0px 50px;
+}
+
+.pricing .flex-div {
+    display: flex;
+}
+
+.pricing .flex-div div {
+    flex: 1;
+    /*border: 1px solid red;*/
+    background-color: #E4E4E4;
+    margin: 0px 20px;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.pricing .flex-div div .title {
+    font-size: 20px;
+    color: #262626;
+    font-weight: 800;
+}
+
+.pricing .flex-div div .title i {
+    padding-right: 10px;
+}
+
+.pricing .flex-div div .price {
+    font-size: 50px;
+    font-weight: bold;
+    color: #262626;
+    padding: 20px 0px 30px;
+}
+
+.pricing .flex-div div .price i {
+    padding-right: 8px;
+}
+
+.pricing .flex-div div .sin {
+    color: #262626;
+    font-size: 17px;
+    padding: 5px 0px;
+}
+
+.pricing .flex-div div .sin i {
+    padding-right: 10px;
+}
+
+.pricing .flex-div div .sin .fa-circle-check {
+    color: #32DC16;
+}
+
+.pricing .flex-div div .sin .fa-circle-xmark {
+    color: #FF0E39;
+}
+
+.pricing .flex-div div a {
+    display: block;
+}
+
+.pricing .flex-div div a button {
+    margin-top: 20px;
+    height: 45px;
+    width: 100%;
+    font-size: 17px;
+    background-color: #767676;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing .flex-div div a button:hover {
+    background-color: #7000FF;
+}
+
+/* Footer */
+footer {
+    background-color: #262626;
+    padding: 50px 100px 30px;
+}
+
+footer hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: #767676;
+    margin: 50px 0px 10px;
+}
+
+footer .flex-tp-div,
+footer .flex-div,
+footer .flex-bt-div {
+    display: flex;
+}
+
+footer .flex-tp-div div,
+footer .flex-div div,
+footer .flex-bt-div div {
+    flex: 1;
+    /*border: 1px solid red;*/
+}
+
+footer .flex-tp-div div {
+    margin-bottom: 20px;
+}
+
+footer .flex-tp-div div img {
+    width: 200px;
+}
+
+footer .flex-tp-div div a {
+    width: fit-content;
+    font-size: 20px;
+    text-decoration: none;
+    color: #767676;
+    margin: 15px 5px 0px;
+    float: right;
+}
+
+footer .flex-div div ul {
+    list-style: none;
+}
+
+footer .flex-div div ul .title {
+    color: white;
+    font-size: 15px;
+}
+
+footer .flex-div div ul li {
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+footer .flex-div div ul li a {
+    text-decoration: none;
+    color: #767676;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .flex-div div ul li a:hover {
+    color: white;
+}
+
+footer .flex-bt-div a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .flex-bt-div a:hover {
+    color: white;
+}
+
+footer .flex-bt-div a:last-child {
+    margin-left: 10px;
+}
+
+
+footer .flex-bt-div p {
+    color: #767676;
+    font-size: 15px;
+}
+
+
+/* Resopnsive */
+@media screen and (max-width: 1160px) {
+
+    /* Hero */
+    .hero-sec .canva1,
+    .hero-sec .canva2 {
+        display: none;
+    }
+
+    .hero-sec .heading {
+        text-align: center;
+        margin: 150px 0px 0px;
+    }
+
+    .hero-sec .btn {
+        margin: 30px auto 0px;
+    }
+
+    /* What we do */
+    .what-we-do-sec .heading {
+        margin: 65px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .what-we-do-sec .content {
+        display: block;
+        padding: 0px 00px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .what-we-do-sec .content div {
+        margin: 50px 10px;
+    }
+
+    .what-we-do-sec .content div .em {
+        margin: auto;
+    }
+
+    .what-we-do-sec .brand-onboard {
+        display: block;
+        text-align: center;
+    }
+
+    .what-we-do-sec .brand-onboard .how-many p:first-child {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .what-we-do-sec .brand-onboard .how-many p:last-child {
+        margin: 0px 0px 50px;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content {
+        display: block;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content div {
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content div a {
+        margin: auto;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content-bt {
+        display: block;
+        padding: 0px 20px 50px;
+        text-align: center;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content-bt div {
+        margin-top: 50px;
+    }
+
+    .what-we-do-sec .brand .bottom-content .flex-content-bt div .em {
+        margin: auto;
+    }
+
+    /* Our work */
+    .our-work .ow-content {
+        display: block;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    .our-work .ow-content div a {
+        margin: 30px auto 0px;
+    }
+
+    .our-work .ow-content div h3 br {
+        display: none;
+    }
+
+    /* Pricing */
+    .pricing {
+        padding: 0px 20px;
+    }
+
+    .pricing h3 {
+        text-align: center;
+    }
+
+    .pricing .flex-div {
+        display: block;
+    }
+
+    .pricing .flex-div div {
+        margin: 20px 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Header */
+    header .mobile {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 20px 30px;
+        text-align: center;
+    }
+
+    footer .flex-tp-div,
+    footer .flex-div,
+    footer .flex-bt-div {
+        display: block;
+    }
+
+    footer .flex-tp-div div a {
+        float: none;
+    }
+
+    footer .flex-div div ul .title {
+        margin-top: 30px;
+    }
+
+    footer .flex-bt-div p {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Header */
+    header .header-menu-btn {
+        display: block;
+        color: #262626;
+        float: right;
+        font-size: 20px;
+        margin: 20px 40px 0px 0px;
+    }
+    header nav ul {
+        position: fixed;
+        top: 45px;
+        right: -100%;
+        background-color: #262626ed;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in-out;
+    }
+    #header-click-btn:checked ~ ul {
+        right: 0;
+    }
+    #header-click-btn:checked ~ .header-menu-btn i::before {
+        content: '\2715';
+        color: #7000FF;
+        font-size: 20px;
+    }
+    header nav ul li {
+        margin: 0px 0px 20px;
+    }
+    header nav ul li a {
+        color: white;
+    }
+    header nav ul li a:hover {
+        color: #b1b1b1;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    /* Hero */
+    .hero-sec .heading {
+        font-size: 30px;
+    }
+
+    /* What we do */
+    .what-we-do-sec .heading {
+        font-size: 20px;
+    }
+    .what-we-do-sec .content div h3 {
+        font-size: 17px;
+    }
+    .what-we-do-sec .brand-onboard .how-many p:first-child {
+        font-size: 70px;
+    }
+    .what-we-do-sec .brand-onboard .how-many p:last-child {
+        font-size: 20px;
+    }
+    .what-we-do-sec .brand-onboard .brand-logo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas:
+            ". ."
+            ". ."
+            ". .";
+    }
+    .what-we-do-sec .brand-onboard .brand-logo img {
+        width: 50px;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content div img {
+        height: 300px;
+        width: 80%;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content div h3 {
+        font-size: 20px;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content-bt div h3 {
+        font-size: 17px;
+    }
+
+    /* Our work */
+    .our-work .ow-content div h3 {
+        font-size: 20px;
+    }
+    .our-work .ow-content div .percentage {
+        font-size: 70px;
+    }
+    .our-work .ow-content div .mini-title {
+        font-size: 17px;
+    }
+
+    /* Pricing */
+    .pricing h3 {
+        font-size: 20px;
+    }
+    .pricing .flex-div div .title {
+        font-size: 17px;
+    }
+    .pricing .flex-div div .price {
+        font-size: 30px;
+    }
+
+    /* Footer */
+    footer .flex-bt-div a {
+        display: block;
+    }
+    footer .flex-bt-div a:last-child {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Header */
+    header nav ul {
+        top: 36px;
+    }
+    header div .logo {
+        margin: 5px 0px 5px 20px;
+    }
+    header div .logo img {
+        width: 150px;
+    }
+    header .header-menu-btn {
+        margin: 15px 20px 0px 0px;
+    }
+    /* Hero */
+    .hero-sec .heroimg {
+        margin-top: 100px;
+    }
+    .hero-sec .heroimg div img {
+        height: 150px;
+    }
+    /* What we do */
+    .what-we-do-sec {
+        margin: 80px 5px 0px;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content div a {
+        width: 95%;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content div a button{
+        width: 100%;
+        font-size: 15px;
+    }
+    .what-we-do-sec .brand .bottom-content .flex-content-bt {
+        padding: 0px 5px 50px;
+    }
+    /* Our work */
+    .our-work .ow-content {
+        padding: 0px 10px;
+    }
+    .our-work .ow-content div a {
+        width: 100%;
+    }
+    .our-work .ow-content div a button {
+        width: 100%;
+        font-size: 15px;
+    }
+    /* Pricing */
+    .pricing {
+        padding: 0px 10px;
+    }
+    /* Footer */
+    footer {
+        padding: 50px 10px 30px;
+    }
+    footer .flex-tp-div div img {
+        width: 150px;
+    }
+}
